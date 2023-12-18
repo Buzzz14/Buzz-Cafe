@@ -1,0 +1,301 @@
+/* CSS Reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* html  */
+
+html {
+    scroll-behavior: smooth;
+    caret-color: transparent;
+}
+
+/* logo  */
+
+#logo {
+    margin: 45px 55px;
+}
+
+#logo a img {
+    margin: -35px -25px;
+    height: 150px;
+}
+
+/* Navigation Bar */
+
+#navbar {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: sticky;
+    top: 0px;    
+    
+    z-index: 2;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px 10px 25px;
+    border-radius: 32px;
+    margin-top: 13px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+.nav{
+    display: flex;
+    margin-right: 25px;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 530px;
+    color: white;
+}
+
+#home::before {
+    content: "";
+    background: url(./img/bg1.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 680px;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.89;
+}
+
+#home h1 {
+    font-size: 3.5em;
+    padding: 15px;
+}
+
+#home p {
+    font-size: 1.7em;
+    padding: 15px;
+    width: 60vw
+}
+
+/* Service Section  */
+
+#service-box {
+    display: flex;
+    margin: 34px;
+}
+
+.service-items {
+    border: 2px solid brown;
+    margin: 5px 20px;
+    padding: 45px;
+    border-radius: 23px;
+    background-color: #f2f2f2;
+}
+
+.service-items img {
+    display: block;
+    margin: auto;
+    margin-bottom: 8px;
+    height: 160px;
+}
+
+.s-head {
+    margin-bottom: 18px;
+}
+
+/* Sponsors Section */
+
+#sponsors {
+    position: relative;
+}
+#sponsors h1{
+    color: white;
+}
+
+#sponsors::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.865),rgba(0, 0, 0, 0.865)), url(./img/bg2.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    z-index: -1;
+    /* opacity: 0.4; */
+}
+
+#sponsors-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#sponsors-box img {
+    height: 140px;
+}
+
+.sponsor-item {
+    padding: 34px;
+}
+
+/* Contact Section  */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(./img/bg3.jpg);
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    caret-color: black;
+}
+
+/* footer section  */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+
+.h-primary {
+    font-size: 3.5rem;
+    padding: 25px;
+}
+
+.p-font{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.s-font{
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+/* button */
+.btn1 {
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: brown;
+    border: 2px solid white;
+    border-radius: 10px;
+
+    margin: 15px;
+    padding: 0.5em 1.5em;
+}
+
+.btn1:hover {
+    color: brown;
+    border: 2px solid brown;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn2 {
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: brown;
+    border: 2px solid white;
+    border-radius: 10px;
+
+    margin: 15px;
+    padding: 0.5em 1.5em;
+}
+
+.btn2:hover {
+    color: brown;
+    border: 2px solid brown;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn3 {
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: brown;
+    border: 2px solid white;
+    border-radius: 10px;
+
+    margin: 15px;
+    padding: 0.5em 1.5em;
+}
+
+.btn3:hover {
+    color: brown;
+    border: 2px solid brown;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
